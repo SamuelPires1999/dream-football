@@ -3,7 +3,7 @@ import Express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import { useExpressServer } from "routing-controllers";
-import { UserController } from "./modules/user/UserController";
+import { PlayerController } from "./modules/user/UserController";
 
 const main = async () => {
     const app = Express();
@@ -11,7 +11,7 @@ const main = async () => {
     app.use(morgan("dev"));
 
     useExpressServer(app, {
-        controllers: [UserController],
+        controllers: [PlayerController],
     });
 
     app.listen(3000, () => {

@@ -1,11 +1,11 @@
 import { Get, JsonController } from "routing-controllers";
 
 @JsonController("/user")
-export class UserController {
+export class PlayerController {
     @Get()
     async list() {
         return {
-            message: "List users",
+            message: "List Players",
         };
     }
 }

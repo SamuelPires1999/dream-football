@@ -28,11 +28,13 @@
     "vitest": "^0.26.3"
   },
   "dependencies": {
+    "@prisma/client": "^4.9.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "morgan": "^1.10.0",
+    "prisma": "^4.9.0",
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "^0.10.1"
   }
