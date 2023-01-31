@@ -24,8 +24,8 @@ model Player {
   dri       Int
   def       Int
   phy       Int
-  team      Team     @relation(fields: [teamId], references: [id])
-  teamId    String
+  team      Team?    @relation(fields: [teamId], references: [id])
+  teamId    String?
 }
 
 model Team {
