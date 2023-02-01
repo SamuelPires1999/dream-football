@@ -4,6 +4,7 @@ import cors from "cors";
 import morgan from "morgan";
 import { useExpressServer } from "routing-controllers";
 import { PlayerController } from "./modules/player/PlayerController";
+import { TeamController } from "./modules/team/TeamController";
 
 const main = async () => {
     const app = Express();
@@ -12,8 +13,7 @@ const main = async () => {
     app.use(Express.json());
 
     useExpressServer(app, {
-        controllers: [PlayerController],
-        classTransformer: true,
+        controllers: [PlayerController, TeamController],
     });
 
     app.listen(3000, () => {
